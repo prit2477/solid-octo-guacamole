@@ -22,19 +22,19 @@ pipeline {
                 sh 'java -version'
             }
         }
-        stage('Example'){
-            input{
+        stage('Example') {
+            input {
             message "Can we deploy in production?"
             ok "yes"
             submitter "Pritam Ramteke"
-            paramaters{
+            paramaters {
                 strings(name: "PERSON", defaultvalue: "Mr. Jenkins" , description: "want to contine")
-            steps{
+            steps {
                 echo "Hello,{$PERSON} Nice to meet you"
 
-}
-}
-}
-}
-}
+             }
+ 
+         }
+      }
+   }
 }
