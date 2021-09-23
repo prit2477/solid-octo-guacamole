@@ -5,6 +5,7 @@ pipeline {
             steps {
                 echo 'Hello, Maven'
                 sh 'mvn --version'
+                sh 'mvn install'
             }
         }
         stage('Example Test') {
