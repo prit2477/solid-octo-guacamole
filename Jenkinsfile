@@ -4,7 +4,7 @@ pipeline {
        stage('clone repo'){
        steps {
            echo 'clone repo'
-           git branch: 'master'
+           git branch: 'master',
            url: 'https://github.com/prit2477/solid-octo-guacamole.git'
 }
 }
