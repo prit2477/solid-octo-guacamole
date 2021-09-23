@@ -22,7 +22,7 @@ pipeline {
                 sh 'java -version'
             }
         }
-        stage('Example') {
+        stage('Example Parameterized') {
             input {
                  message "Can we deploy in production?"
                  ok "yes"
@@ -39,5 +39,5 @@ pipeline {
          }
       }
    }
- } 
+ 
 
