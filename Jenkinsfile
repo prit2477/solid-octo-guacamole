@@ -1,6 +1,14 @@
 pipeline {
     agent any
-    stages {
+    stages{
+       stage('clone repo'){
+       steps {
+           echo 'clone repo'
+           git branch: 'master'
+           url: 'https://github.com/prit2477/solid-octo-guacamole.git'
+}
+}
+
         stage('Example Build') {
             steps {
                 echo 'Hello, Maven'
