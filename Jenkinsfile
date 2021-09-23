@@ -28,7 +28,7 @@ pipeline {
                  ok "yes"
                  submitter "Pritam Ramteke"
                  parameters {
-                       string(name: "PERSON",  defaultvalue: "Mr. Jenkins", description: "want to contine")
+                       string(name: "PERSON",  defaultValue: "Mr. Jenkins", description: "want to contine")
                  }
             }
             steps {
