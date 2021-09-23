@@ -24,11 +24,13 @@ pipeline {
         }
         stage('Example') {
             input {
-            message "Can we deploy in production?"
-            ok "yes"
-            submitter "Pritam Ramteke"
-            paramaters {
-                strings(name: "PERSON", defaultvalue: "Mr. Jenkins" , description: "want to contine")
+                 message "Can we deploy in production?"
+                 ok "yes"
+                 submitter "Pritam Ramteke"
+                 paramaters {
+                       strings(name: "PERSON", defaultvalue: "Mr. Jenkins" , description: "want to contine")
+                   }
+               }
             steps {
                 echo "Hello,{$PERSON} Nice to meet you"
 
@@ -38,4 +40,4 @@ pipeline {
       }
    }
  } 
-}
+
