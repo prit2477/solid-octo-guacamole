@@ -27,7 +27,7 @@ pipeline {
                  message "Can we deploy in production?"
                  ok "yes"
                  submitter "Pritam Ramteke"
-                 paramaters {
+                 parameters {
                        strings(name: "PERSON", defaultvalue: "Mr. Jenkins" , description: "want to contine")
                  }
             }
